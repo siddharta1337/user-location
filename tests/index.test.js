@@ -1,4 +1,4 @@
-const getAboutUsLink = require("./../index");
-test("Returns about-us for english language", () => {
-    expect(getAboutUsLink("en-US")).toBe("/about-us");
+const getURLByLocation = require("./../index");
+test("Returns user to located website by country ", () => {
+    expect(getURLByLocation("US")).toBe("/home");
 });
