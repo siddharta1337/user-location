@@ -20,10 +20,6 @@ jobs:
         with:
           node-version: '16.x'
       - run: npm ci
+      - run: npm run test
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-       - run: npm run test
