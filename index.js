@@ -1,12 +1,13 @@
-const englishCode = "en-US";
-const spanishCode = "es-ES";
-function getAboutUsLink(language){
-    switch (language.toLowerCase()){
-      case englishCode.toLowerCase():
-        return '/about-us';
-      case spanishCode.toLowerCase():
-        return '/acerca-de';
+const canadaCode = "CA";
+const usaCode = "US";
+
+function getURLByLocation(location){
+    switch (location.toLowerCase()){
+      case canadaCode.toLowerCase():
+        return '/canada/home';
+      case usaCode.toLowerCase():
+        return '/home';
     }
     return '';
 }
-module.exports = getAboutUsLink;
+module.exports = getURLByLocation;
