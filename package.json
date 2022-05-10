@@ -1,7 +1,7 @@
 {
   "name": "@siddharta1337/location-manager",
   "version": "1.1.5",
-  "description": "Find a User By Location",
+  "description": "Location Manager",
   "main": "index.js",
   "scripts": {
     "test": "jest"
